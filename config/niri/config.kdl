@@ -258,7 +258,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
-spawn-at-startup "xwayland-satellite"
+#spawn-at-startup "xwayland-satellite"
 spawn-at-startup "sh" "-c" "swaybg -i ~/builds/dotfiles/wallpaper/outrun.jpg"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -593,9 +593,9 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
-environment {
-	DISPLAY ":0"
-}
+#environment {
+	#	DISPLAY ":0"
+#}
 hotkey-overlay {
 	skip-at-startup
 }
